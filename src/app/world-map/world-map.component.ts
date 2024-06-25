@@ -1,5 +1,5 @@
 import { CountryInfoComponent } from './../country-info/country-info.component';
-import { Component, ContentChildren, QueryList } from '@angular/core';
+import { Component, ViewChild, ElementRef } from '@angular/core';
 import { Country } from '../country'
 
 @Component({
@@ -17,7 +17,7 @@ export class WorldMapComponent {
   url = "https://api.worldbank.org/v2/country/"
   options = "?format=json"
 
-  @ContentChildren("img") myVals!: QueryList<any>; 
+  @ViewChild('world') world!: ElementRef;
 
   hoverFn(event: any) {
     console.log("hi")
@@ -26,16 +26,11 @@ export class WorldMapComponent {
   // country: Country = {name, }
   // review directives https://learn.zybooks.com/zybook/WGUD280v1/chapter/5/section/11
 
-  // add code to my-app for practice
-
 
   constructor() {}
 
-  
-
-  ngOnInit(): void {
-
-    console.log(this.myVals)
+  ngAfterViewInit(): void {
+    console.log(this.world.nativeElement)
   }
   
 
