@@ -1,0 +1,12 @@
+.fits {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+}
+
+img {
+  height: 100%;
+  width: 70%;
+  border: 2px solid red;
+  margin: 10px;
+}
