@@ -4,6 +4,6 @@ export interface Country {
   region: string, // region.value
   iso2Code: string,
   incomeLevel: string, //incomeLevel.value
-  longtitude: string,
-  latitute: string
+  longitude: string,
+  latitude: string
 }

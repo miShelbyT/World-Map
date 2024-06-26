@@ -1,6 +1,10 @@
 <div class="list">
-  <h2>Country Info Goes Here:</h2>
+  <h2>Selected Country Info:</h2>
   <ol>
-
+    @for (info of objectEntries(country); track info[0]) {
+      @if(info[1]){
+        <li>{{info[0]}}: <span>{{info[1]}}</span></li>
+      }
+    }
   </ol>
 </div>
