@@ -6,7 +6,20 @@ li {
   padding: 10px;
 }
 
+ul {
+  list-style-type: "\1F310";
+}
+
 span {
   font-weight: bold;
-  color: rgb(153, 51, 80);
+  color: var(--main-fuschia);
+}
+
+p {
+  font-size: 18px;
+}
+
+.emoji {
+
+  font-size: 30px;
 }

@@ -1,13 +1,17 @@
-.fits {
+.container {
   height: 100vh;
   width: 100vw;
   display: flex;
 }
 
 svg {
-  width: 70%;
+  height: 70%;
   border: 2px solid rgb(153, 51, 80);;
-  margin: 10px;
+  margin: 15px;
   padding: 10px;
+}
+
+svg:hover {
+  cursor: pointer;
 }
 

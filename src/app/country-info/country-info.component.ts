@@ -26,4 +26,6 @@ constructor(){}
 
 keys = Object.keys(this.country) as(keyof typeof this.country)[];
 
+emoji = '👈'
+
 }

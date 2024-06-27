@@ -1,15 +1,15 @@
-div {
+header {
   height: 70px;
   background-color: azure;
-  border: 2px solid blue;
+  border-bottom: 0.5rem solid var(--main-fuschia);
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 h1 {
-  font-size: 25px;
-  font-family: Arial, Helvetica, sans-serif;
+  font-size: 27px;
+  /* font-family: Arial, Helvetica, sans-serif; */
   background: linear-gradient(to right, #f32170,
       #ff6b08, #cf23cf, #eedd44);
   background-clip: text;
