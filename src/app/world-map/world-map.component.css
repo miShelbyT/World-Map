@@ -6,12 +6,13 @@
 
 svg {
   height: 70%;
-  border: 2px solid rgb(153, 51, 80);;
+  border: 2px solid var(--main-fuschia);
   margin: 15px;
   padding: 10px;
 }
 
-svg:hover {
+svg:hover path {
   cursor: pointer;
+  stroke: var(--main-fuschia);
 }
 

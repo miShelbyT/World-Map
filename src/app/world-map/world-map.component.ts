@@ -53,6 +53,7 @@ export class WorldMapComponent {
 
   hoverFn(event: any) {
     this.getCountry(event.target.id)
+    console.log(this.country)
   }
 
 
