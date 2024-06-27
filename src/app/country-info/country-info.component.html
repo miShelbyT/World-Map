@@ -2,8 +2,9 @@
   <h2>Selected Country Info:</h2>
   <ol>
     @for(key of keys; track key) {
-      <li>{{country[key]}}</li>
+    <li>
+      {{ key }}: <span>{{ country[key] }}</span>
+    </li>
     }
-    
   </ol>
 </div>

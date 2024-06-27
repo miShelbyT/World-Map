@@ -1,12 +1,12 @@
 import { Directive, ElementRef, HostListener, Input } from '@angular/core';
 
 @Directive({
-  selector: '[appHighlight]',
+  selector: '[countryHighlight]',
   standalone: true
 })
 export class HighlightDirective {
 
-  @Input() appHighlight = ''
+  @Input() countryHighlight = ''
     
   constructor(private el: ElementRef) {}
 
@@ -18,7 +18,7 @@ export class HighlightDirective {
   }
 
   private highlight(color: string) {
-    this.el.nativeElement.style.backgroundColor = color;
+    this.el.nativeElement.style.fill = color;
   }
 
 }
