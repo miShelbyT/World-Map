@@ -20,10 +20,10 @@ export class WorldMapComponent {
   color: string = '';
   url: string = "https://api.worldbank.org/v2/country/"
   options: string = "?format=json"
-  id: string = ""
 
   country: Country = {
     name: "",
+    id: "",
     capitalCity: "",
     region: "", // region.value
     iso2Code: "",
@@ -36,7 +36,6 @@ export class WorldMapComponent {
     this.api.get(`${this.url}${id}${this.options}`)
     .subscribe({
       next: (data: any) => {
-        // console.log("data from api call", data[1][0])
         for(let key in this.country) {
           if(key == "incomeLevel" || key == "region") {
             this.country[key as keyof Country] = data[1][0][key].value
@@ -53,11 +52,7 @@ export class WorldMapComponent {
   }
 
   hoverFn(event: any) {
-    // avoiding exact duplicate api calls in a row i.e., USA USA USA
-    if(event.target.id !== this.id ) {
-      this.getCountry(event.target.id)
-    }
-    event.target.id = this.id
+    this.getCountry(event.target.id)
   }
 
 

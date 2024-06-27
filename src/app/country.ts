@@ -1,4 +1,5 @@
 export interface Country {
+  id: string,
   name: string,
   capitalCity: string,
   region: string, // region.value

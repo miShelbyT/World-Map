@@ -15,6 +15,7 @@ export class CountryInfoComponent {
 constructor(){}
 @Input() country: Country = {
     name: "",
+    id: "",
     capitalCity: "",
     region: "", // region.value
     iso2Code: "",
@@ -23,12 +24,6 @@ constructor(){}
     latitude: ""
 };
 
-objectEntries(obj: {}) {
-  return Object.entries(obj);
-}
-
-
-  
-  
+keys = Object.keys(this.country) as(keyof typeof this.country)[];
 
 }
