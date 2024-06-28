@@ -20,6 +20,7 @@ export class WorldMapComponent {
   color: string = '';
   url: string = "https://api.worldbank.org/v2/country/"
   options: string = "?format=json"
+  id: string = ""
 
   country: Country = {
     name: "",
@@ -33,6 +34,7 @@ export class WorldMapComponent {
   };
 
   getCountry(id: string) {
+    console.log("api call")
     this.api.get(`${this.url}${id}${this.options}`)
     .subscribe({
       next: (data: any) => {
@@ -52,7 +54,10 @@ export class WorldMapComponent {
   }
 
   hoverFn(event: any) {
-    this.getCountry(event.target.id)
+    if(event.target.id && event.target.id !== this.id) {
+      this.id = event.target.id
+      this.getCountry(event.target.id)
+    }
   }
 
 
