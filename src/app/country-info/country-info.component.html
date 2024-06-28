@@ -5,7 +5,7 @@
     <ul>
       @for(key of keys; track key) {
       <li>
-        {{ key }}: <span>{{ country[key] }}</span>
+        {{ convertKey(key) }}: <span>{{ country[key] }}</span>
       </li>
       }
     </ul>

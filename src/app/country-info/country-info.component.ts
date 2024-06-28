@@ -26,6 +26,13 @@ constructor(){}
 
 keys = Object.keys(this.country) as(keyof typeof this.country)[];
 
+
+// temporary workaround on key conversion for rendering
+convertKey(k: any) {
+  return <string>k.toUpperCase()
+}
+
+
 emoji = '👈'
 
 }
