@@ -36,7 +36,7 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 If you would like to contribute to this cute li'l project, please submit a pull request. 
 <p align="center">
-  <img src="src/assets/world-proj.png" width="500">
+  <img src="src/assets/world-proj.png" width="600">
 </p>
 
 
