@@ -22,6 +22,11 @@ p {
   text-align: center;
 }
 
+.placeholder {
+  position: absolute;
+  top: 45%;
+}
+
 .emoji {
   font-size: 30px;
 }
