@@ -16,3 +16,7 @@ svg:hover path {
   stroke: var(--main-fuschia);
 }
 
+.hover:hover {
+  fill: var(--main-fuschia);
+}
+
