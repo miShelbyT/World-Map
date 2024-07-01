@@ -57,7 +57,6 @@ export class WorldMapComponent {
     if(event.target.id && event.target.id !== this.id) {
       this.id = event.target.id
       this.getCountry(event.target.id)
-      event.target.classList.add("hover")
     }
   }
 
