@@ -2,12 +2,11 @@ import { WorldApiService } from './../world-api.service';
 import { CountryInfoComponent } from './../country-info/country-info.component';
 import { Component } from '@angular/core';
 import { Country } from '../country'
-import { HighlightDirective } from './highlight.directive';
 
 @Component({
   selector: 'app-world-map',
   standalone: true,
-  imports: [CountryInfoComponent, HighlightDirective],
+  imports: [CountryInfoComponent],
   templateUrl: './world-map.component.html',
   styleUrl: './world-map.component.css'
 
