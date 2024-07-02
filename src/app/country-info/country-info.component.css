@@ -1,6 +1,6 @@
-.list {
-  margin-top: 20%;
-  width: 385px;
+:root {
+    margin-top: 20%;
+    max-width: 25%;
 }
 
 ul {

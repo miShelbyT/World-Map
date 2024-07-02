@@ -1,13 +1,13 @@
 .container {
-  height: 100vh;
+  height: 90vh;
   width: 100vw;
   display: flex;
 }
 
 svg {
-  width: 70%;
+  max-width: 70%;
   border: 2px solid var(--main-fuschia);
-  margin: 15px;
+  margin: 15px 0 15px 15px;
   padding: 10px;
 }
 
