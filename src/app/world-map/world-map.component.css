@@ -54,12 +54,12 @@ svg {
   padding: 5px;
 }
 
-svg:hover path {
+svg:hover path, svg:active path {
   cursor: pointer;
   stroke: var(--main-fuschia);
 }
 
-path:hover {
+path:hover, path:active {
   fill: var(--main-fuschia);
 }
 
