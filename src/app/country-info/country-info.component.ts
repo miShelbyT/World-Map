@@ -40,5 +40,6 @@ convertKey(k: any) {
 
 
 emoji = '👈'
+emojiDown = '👇'
 
 }
