@@ -26,16 +26,10 @@ constructor(){}
 
 keys = Object.keys(this.country) as(keyof typeof this.country)[];
 
-
-// temporary workaround on key conversion for rendering
 convertKey(k: any) {
   let temp = <string>k
-  const regex = /[A-Z]/
-  // if(temp.match(regex)) {
-  //   let idx: number = temp.indexOf(temp.match(regex)[0])
-  //   return `${temp.substring(0, idx)} ${temp.substring(idx)}`.toUpperCase()
-  // } 
-  return temp.toUpperCase()
+  const result = temp.replace(/([a-z])([A-Z])/g, '$1 $2');
+  return result.toUpperCase().trim();
 }
 
 

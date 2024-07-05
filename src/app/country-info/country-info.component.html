@@ -1,7 +1,7 @@
 <div class="list">
   
   @if(country.name) {
-    <p>Country Info:</p>
+    <p>Country Info:<sup>*</sup></p>
     <ul>
       @for(key of keys; track key) {
       <li>
@@ -9,6 +9,7 @@
       </li>
       }
     </ul>
+    
   } @else {
     <p class="placeholder "><span class="emoji lg-view" [innerHTML]="emoji"></span> <span class="emoji sm-view" [innerHTML]="emojiDown"></span> To Use, Move Your Mouse Over a Country</p>
   }
