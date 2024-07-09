@@ -21,6 +21,7 @@ export class WorldMapComponent {
   options: string = "?format=json"
   id: string = ""
   element: any = ""
+  clicked = false
 
   country: Country = {
     name: "",
@@ -57,6 +58,10 @@ export class WorldMapComponent {
       this.id = event.target.id
       this.getCountry(event.target.id)
     }
+  }
+
+  disclaimerFunc(event: any) {
+    this.clicked = !this.clicked
   }
 
 
