@@ -33,7 +33,7 @@ convertKey(k: any) {
 }
 
 
-emoji = '👈'
-emojiDown = '👇'
+point = '👈'
+pointUp = '👆'
 
 }
