@@ -3,7 +3,7 @@
   width: 100vw;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 3fr minmax(100px, max-content) 0.35fr;
+  grid-template-rows: 3fr 2fr 0.35fr;
   grid-column-gap: 5px;
   grid-row-gap: 0px;
 }
@@ -78,11 +78,10 @@ footer {
   margin: 0 14px;
 }
 
-footer p {
+small {
   margin-left: 14px;
-  font-size: 14px;
 }
 
-.link {
+a:link {
   font-size: 20px;
 }

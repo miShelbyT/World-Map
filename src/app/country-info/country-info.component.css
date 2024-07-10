@@ -17,24 +17,18 @@ span {
 p {
   font-size: 18px;
   text-align: center;
-  vertical-align: middle;
 }
 
-
-
-.emoji, .emojiDown {
-  font-size: 30px;
+.emoji {
+  font-size: 35px;
 }
 
 .lg-view{
   display: none;
 }
 
-.sm-view{
-  display:inline-block;
-}
 
-@media screen and (min-width:915px) {
+@media screen and (min-width:925px) {
   :root {
     height: 90vh;
     max-width: 25%;

@@ -1290,10 +1290,10 @@
   <app-country-info [country]="country"></app-country-info>
   <footer>
     @if(clicked) {
-      <small class="disc" (click)="disclaimerFunc($event)" ><sup>*</sup>Disclaimer (click or tap to hide): Country information is pulled from the <a href="https://documents.worldbank.org/en/publication/documents-reports/api" class="link" target="_blank">Worldbank API</a>  and is for general informational purposes only. All information contained herein is provided in good faith however we make no representation or warranty of any kind, express, or implied, regarding the accuracy, adequacy, validity, reliability, or completeness of any information obtained from the Worldbank API.</small>
+      <small class="disc" (click)="disclaimerFunc($event)" ><sup>*</sup>Disclaimer (click or tap to hide): Country information is pulled from the <a href="https://documents.worldbank.org/en/publication/documents-reports/api" target="_blank">Worldbank API</a>  and is for general informational purposes only. All information contained herein is provided in good faith however we make no representation or warranty of any kind, express, or implied, regarding the accuracy, adequacy, validity, reliability, or completeness of any information obtained from the Worldbank API.</small>
     } @else {
       <small class="disc" (click)="disclaimerFunc($event)"><sup>*</sup>Click or Tap for Disclaimer</small>
     }
-    <p>World Map Project {{"\u00A9"}} 2024</p>
+    <small class="copy">World Map Project {{"\u00A9"}} 2024</small>
   </footer>
 </div>
